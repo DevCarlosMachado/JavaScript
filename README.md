@@ -1,2 +1,1 @@
-# JavaScript
-Repositório para armazenar conteúdos de aprendizado na linguagem Javascript.
+# JavaScriptRepositório para armazenar todo o código e projetos criados usando Linguagem JavaScript.
