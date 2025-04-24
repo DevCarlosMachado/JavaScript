@@ -1,0 +1,27 @@
+Aula 06 - Curso Js
+
+Transformar de número para string
+- Number.parseInt(n) ---> Inteiros
+- Number.parseFloat(n) ---> Reais
+-Number(n) ---> O sistema decifra se é inteiro ou real
+
+Transformar de String para número
+- String(n)
+- n.toString()
+
+Formatação de String
+var s = "JavaScript";
+- "Eu estou estudando s" //Não faz interpolação
+- "Eu estou estudando " + s //Faz concatenação 
+- `Eu estou estudando ${s}` //Usa template String
+
+- s.length //quantos caracteres a String tem
+- s.toUpperCase() //tudo para maiúscula
+- s.toLowerCase() //tudo para minúscula
+
+Formatação de números
+var n1 = 1345.5
+
+- n1.toFixed(2) //duas casas decimais
+- n1.toFixed(2).replace("." , ","); //troca o ponto por vírgula 
+- n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}); //transforma o número em reais (R$)

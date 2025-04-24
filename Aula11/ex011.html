@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            color: rgb(133, 90, 168);
+        }
+        p {
+            margin-bottom: 5px;
+            color: black;
+        }
+        input {
+            height: 20px;
+            margin: 15;
+            margin-left: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema para saber a nacionalidade</h1>
+    <div style="margin-top: 10px">
+        <p><strong>Qual seu país de origem?</strong></p>
+        <input type="text" name="txtnac" id="txtnac">
+        <input type="button" value="verificar" onclick="verificar()">
+    </div>
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var txtn = window.document.getElementById('txtnac')
+            var res = window.document.querySelector('div#res')
+            var nacao = (txtn.value.toUpperCase())
+            if (nacao == 'BRASIL') {
+                res.innerHTML = '<p>Você é <strong>brasileiro!</strong></p>'
+            } else {
+                res.innerHTML = '<p>Você é <strong>estrangeiro!</strong></p>'
+            }
+        }
+    </script>
+</body>
+</html>
